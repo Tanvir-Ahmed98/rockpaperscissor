@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
+
+<title>Rock Paper Scissors</title>
+</head>
+<body style="background-color: #27006F;">
+  <div style="margin-top:150px">
+<center>
+      <strong style="color:white;font-size:200%"> Your Choice is:</strong> <p th:style="#{results}!=0?'color:red;':'color:red;'" th:text="${results}"></p>
+      <strong style="color:white;font-size:200%"> Computer Choice is:</strong> <p th:style="#{results}!=0?'color:red;':'color:red;'" th:text="${number}"></p>
+      <strong style="color:white;font-size:200%"> Result is:</strong> <p th:style="#{results}!=0?'color:red;':'color:red;'" th:text="${roundResult}"></p>
+      <form action="#"  th:action="@{/}">
+          <input type="submit" class="btn btn-primary btn-sm"
+            value="Play Again" style="border-radius: 400px;">
+      </form>
+</center>
+</div>
+</body>
+</html>

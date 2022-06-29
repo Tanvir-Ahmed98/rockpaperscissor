@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
+
+<title>Rock Paper Scissors</title>
+</head>
+<body th:style="'background-image:url(' + @{picture.jpg} + '); background-repeat: no-repeat, repeat; background-size: cover;'">
+<div class="container" >
+ 
+<center>
+	<form action="#"  th:action="@{/game}">
+        <table class="table">
+      <tbody>
+            <tr>
+              <td style="padding:130px;">     
+                  <div class="form-check form-check-inline" >
+                    <input class="form-check-input"  th:name="select" type="radio"  id="inlineCheckbox1" value="1" />
+                    <label class="form-check-label" for="inlineCheckbox1"   checked> <strong style="color:white;font-size:200%">Rock </strong></label>
+                  </div>
+               </td>
+              <td style="padding:130px;">    
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input"  th:name="select" type="radio"  id="flexRadioDefault1" value="2" />
+                    <label class="form-check-label" for="flexRadioDefault1" > <strong style="color:white;font-size:200%">Paper </strong> </label>
+                    </div>
+               
+                </td>
+               
+              <td style="padding:130px;">  
+                    <div class="form-check form-check-inline" >
+                       
+                    <input class="form-check-input"  th:name="select" type="radio"  id="flexRadioDefault1" value="3" />
+                    <label class="form-check-label" for="flexRadioDefault1" > <strong style="color:white;font-size:200%">Scissor </strong> </label>
+                    </div>
+               </td>
+            </tr>
+      </tbody>
+          </table> 
+          
+            <input type="submit" class="btn btn-primary btn-sm"
+            value="Play Game" style="border-radius: 400px;height:50px;width:250px;position:absolute;bottom:60%;right:42.5%;"  >
+     
+	</form>
+</center>
+</div>
+</body>
+</html>
